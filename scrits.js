@@ -1,34 +1,34 @@
 // script.js
 
-constRoot = document('order1'),
-constBiscuits = document(biscuits),
-constDonuts = document(donuts),
-constPancakes = document(pancakes),
-constStatus = document(status)
+const order1Root = document.querySelector('[data-key="order1"]');
+const order1Biscuits = order1Root.querySelector('.biscuits .count');
+const order1Donuts = order1Root.querySelector('.donuts .count');
+const order1Pancakes = order1Root.querySelector('.pancakes .count');
+const order1Status = order1Root.querySelector('.status dd');
 
-constRoot = document(order2),
-constBiscuits= document(biscuits),
-constDonuts = document(donuts),
-constPancakes = document(pancakes),
-constStatus = document(status)
+order1Biscuits.textContent = order1Root.dataset.biscuits;
+order1Donuts.textContent = order1Root.dataset.donuts;
+order1Pancakes.textContent = order1Root.dataset.pancakes;
+order1Status.textContent = order1Root.dataset.delivered === 'true' ? 'Delivered' : 'Pending';
 
-constRoot = document(order3),
-constBiscuits = document(biscuits),
-constDonuts = document(donuts),
-constPancakes = document(pancakes),
-constStatus = document(status)
+const order2Root = document.querySelector('[data-key="order2"]');
+const order2Biscuits = order2Root.querySelector('.biscuits .count');
+const order2Donuts = order2Root.querySelector('.donuts .count');
+const order2Pancakes = order2Root.querySelector('.pancakes .count');
+const order2Status = order2Root.querySelector('.status dd');
 
-biscuits= 1-root.biscuits,
-donuts = 1-root.donuts,
-pancakes = 1-root.pancakes,
-status = 1-root.status ? Delivered : Pending
+order2Biscuits.textContent = order2Root.dataset.biscuits;
+order2Donuts.textContent = order2Root.dataset.donuts;
+order2Pancakes.textContent = order2Root.dataset.pancakes;
+order2Status.textContent = order2Root.dataset.delivered === 'true' ? 'Delivered' : 'Pending';
 
-biscuits= 2-root.biscuits,
-donuts = 2-root.donuts,
-pancakes = 2-root.pancakes,
-status = 2-root.status ? Delivered : Pending
+const order3Root = document.querySelector('[data-key="order3"]');
+const order3Biscuits = order3Root.querySelector('.biscuits .count');
+const order3Donuts = order3Root.querySelector('.donuts .count');
+const order3Pancakes = order3Root.querySelector('.pancakes .count');
+const order3Status = order3Root.querySelector('.status dd');
 
-biscuits= 3-root.biscuits,
-donuts = 3-root.donuts,
-pancakes = 3-root.pancakes,
-status = 3-root.status ? Delivered : Pending
+order3Biscuits.textContent = order3Root.dataset.biscuits;
+order3Donuts.textContent = order3Root.dataset.donuts;
+order3Pancakes.textContent = order3Root.dataset.pancakes;
+order3Status.textContent = order3Root.dataset.delivered === 'true' ? 'Delivered' : 'Pending';
